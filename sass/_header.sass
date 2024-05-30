@@ -1,0 +1,25 @@
+.header__wrapper
+	display: grid
+	padding: 24px 48px
+	grid-template-columns: 1fr max-content 1fr
+	grid-template-rows: max-content
+	width: 100%
+	border: 4px solid #F97247
+	border-radius: 64px
+	
+	.nav
+		grid-column: 2 / 3
+		align-content: center
+		&__menu			
+			display: flex
+			align-items: center
+			width: 100%
+			padding: 8px
+			gap: 32px
+
+	.btn__wrapper
+		grid-column: 3 / 4
+		justify-self: end
+		display: flex
+		gap: 14px
+		align-items: center

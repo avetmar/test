@@ -1,0 +1,31 @@
+/** Lexend Regular **/
+@font-face {
+  font-family: "Lexend";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Lexend-Regular.woff2") format("woff2");
+}
+
+/** Lexend Medium **/
+@font-face {
+  font-family: "Lexend";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Lexend-Medium.woff2") format("woff2");
+}
+
+/** Lexend SemiBold **/
+@font-face {
+  font-family: "Lexend";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Lexend-SemiBold.woff2") format("woff2");
+}
+
+/** Futura PT Medium **/
+@font-face {
+  font-family: "FuturaPT";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/FuturaPT-medium.woff2") format("woff2");
+}
