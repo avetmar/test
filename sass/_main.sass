@@ -11,6 +11,7 @@ body
 	background-color: $fon
 	line-height: 20px
 	padding-top: 16px 
+	position: relative
 	
 *, *::before, *::after
 	box-sizing: border-box
@@ -42,7 +43,76 @@ button
 
 .promo
 	margin-bottom: 66px
-	min-height: 960px
+	padding: 140px 0 161px 0
 	&__wrapper
-		display: grid
-		grid-template-columns: 42% 1fr 33%
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+
+	&__content
+		max-width: 669px
+		&_title
+			span
+				text-transform: uppercase
+				span
+					color: $accent
+		
+	&__blub
+		max-width: 531px
+		&_title
+			text-align: center
+			margin-bottom: 24px
+		&_wrapper
+			background: none
+			width: 100%
+			height: 595px
+			border: 3px solid $accent
+			border-radius: 100px
+			overflow: hidden
+			padding: 24px 16px 24px 24px
+
+	&__blub_scroll
+		height: 100%
+		overflow-y: scroll
+		background: none
+		border-radius: 76px
+		&::-webkit-scrollbar
+			width: 8px
+		&::-webkit-scrollbar-track
+			background: rgba(255, 255, 255, 12%)
+			margin: 96px 0
+			border-radius: 4px
+		&::-webkit-scrollbar-thumb
+			background-color: $accent
+			border-radius: 4px
+
+	&__blub_item
+		display: flex
+		flex-direction: column
+		gap: 14px
+		padding: 16px 64px
+		border-radius: 196px
+		overflow: hidden
+		&-text
+			font-size: 24px
+			line-height: 28px
+		&-data
+			font-family: FuturaPT
+			font-size: 14px
+			line-height: 16px
+
+.chips
+	position: absolute
+	justify-self: center
+	top: 16px
+	left: 44%
+	overflow: hidden
+	height: 100%
+	display: flex
+	gap: 17px
+	&__wrapper
+		display: flex
+		width: 100px
+		flex-direction: column
+		gap: 15px

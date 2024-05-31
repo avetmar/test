@@ -1,0 +1,38 @@
+.footer    
+    border: 3px solid $accent
+    border-radius: 64px 64px 0 0
+    padding: 40px 0 24px 0
+    background: #311212
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: end
+    &__links
+        display: flex
+        gap: 40px
+        &_item
+            text-transform: uppercase
+    &__social_title
+        margin-bottom: 14px
+        text-align: right
+    &__social_icons
+        display: flex
+        gap: 8px
+
+    &__icon
+        position: relative
+        width: 32px
+        height: 32px
+        img.back
+            opacity: 0
+        
+        img
+            position: absolute
+            left: 0
+            width: 32px
+            height: 32px
+            transition: opacity 0.4s ease-in-out
+            
+    &__icon
+        img.back:hover
+            opacity: 1
