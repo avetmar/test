@@ -12,22 +12,33 @@
 </head>
 
 <body>
+	<!-- скрывает анимцию выше хедера -->
+	<div class="hider"></div>
 
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<nav class="nav">
 					<ul class="nav__menu">
-						<li class="nav__menu_item"><a href="#">About us</a></li>
-						<li class="nav__menu_item"><a href="#">Grand</a></li>
-						<li class="nav__menu_item"><a href="#">Commissions</a></li>
-						<li class="nav__menu_item"><a href="#">Blub</a></li>
-						<li class="nav__menu_item"><a href="#">Blub</a></li>
-						<li class="nav__menu_item"><a href="#">Careers</a></li>
+						<li class="nav__menu_item"><a href="#" class="text-hover">About us</a></li>
+						<li class="nav__menu_item"><a href="#" class="text-hover">Grand</a></li>
+						<li class="nav__menu_item"><a href="#" class="text-hover">Commissions</a></li>
+						<li class="nav__menu_item"><a href="#blog" class="text-hover">Blog</a></li>
+						<li class="nav__menu_item"><a href="#" class="text-hover">Careers</a></li>
 					</ul>
 				</nav>
 				<div class="btn__wrapper">
-					<button class="btn lang" id="btn_lang"><img src="icons/Union.svg" alt="union icon">RU</button>
+					<div class="btn__lang_wrapper">
+						<button class="btn__lang">
+							<img src="icons/Union.svg" alt="union_icon">
+							<div class="btn__lang_item">EN</div>
+						</button>
+						<div class="btn__lang_back">
+							<a href="#" class="btn__lang_item">RU</a>
+							<a href="#" class="btn__lang_item">FRA</a>
+							<a href="#" class="btn__lang_item">DE</a>
+						</div>
+					</div>
 					<a href="#" class="btn">LOG IN</a>
 					<a href="#" class="btn__main-small">SIGN UP</a>
 				</div>
@@ -44,34 +55,34 @@
 					<a href="#" class="btn__main">Partner</a>
 				</div>
 
-				<div class="promo__blub">
-					<h2 class="promo__blub_title">BLUB</h2>
-					<div class="promo__blub_wrapper ">
-						<div class="promo__blub_scroll">
-							<div class="promo__blub_item">
-								<p class="promo__blub_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
+				<div class="promo__blog" id="blog">
+					<h2 class="promo__blog_title">blog</h2>
+					<div class="promo__blog_wrapper ">
+						<div class="promo__blog_scroll">
+							<div class="promo__blog_item">
+								<p class="promo__blog_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
 									transfer</p>
-								<div class="promo__blub_item-data">10.02.2023</div>
+								<div class="promo__blog_item-data">10.02.2023</div>
 							</div>
-							<div class="promo__blub_item">
-								<p class="promo__blub_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
+							<div class="promo__blog_item">
+								<p class="promo__blog_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
 									transfer</p>
-								<div class="promo__blub_item-data">10.02.2023</div>
+								<div class="promo__blog_item-data">10.02.2023</div>
 							</div>
-							<div class="promo__blub_item">
-								<p class="promo__blub_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
+							<div class="promo__blog_item">
+								<p class="promo__blog_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
 									transfer</p>
-								<div class="promo__blub_item-data">10.02.2023</div>
+								<div class="promo__blog_item-data">10.02.2023</div>
 							</div>
-							<div class="promo__blub_item">
-								<p class="promo__blub_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
+							<div class="promo__blog_item">
+								<p class="promo__blog_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
 									transfer</p>
-								<div class="promo__blub_item-data">10.02.2023</div>
+								<div class="promo__blog_item-data">10.02.2023</div>
 							</div>
-							<div class="promo__blub_item">
-								<p class="promo__blub_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
+							<div class="promo__blog_item">
+								<p class="promo__blog_item-text">Payment methods: Skrill, Neteller, webmoney, Bank
 									transfer</p>
-								<div class="promo__blub_item-data">10.02.2023</div>
+								<div class="promo__blog_item-data">10.02.2023</div>
 							</div>
 						</div>
 					</div>
@@ -85,9 +96,9 @@
 		<div class="container">
 			<div class="footer__wrapper">
 				<ul class="footer__links">
-					<li class="footer__links_item"><a href="#">Terms &amp; Conditions</a></li>
-					<li class="footer__links_item"><a href="#">Cookies</a></li>
-					<li class="footer__links_item"><a href="#">Contacts</a></li>
+					<li class="footer__links_item"><a href="#" class="text-hover">Terms &amp; Conditions</a></li>
+					<li class="footer__links_item"><a href="#" class="text-hover">Cookies</a></li>
+					<li class="footer__links_item"><a href="#" class="text-hover">Contacts</a></li>
 				</ul>
 				<div class="footer__social">
 					<div class="footer__social_title">Our social media:</div>

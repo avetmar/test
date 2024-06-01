@@ -10,8 +10,10 @@ body
 	font-size: 1.6rem
 	background-color: $fon
 	line-height: 20px
-	padding-top: 16px 
 	position: relative
+*a
+	text-decoration: none
+	color: $text
 	
 *, *::before, *::after
 	box-sizing: border-box
@@ -19,7 +21,7 @@ body
 	margin: 0
 	text-decoration: none
 	list-style-type: none
-	color: $text
+	// color: $text
 
 :where( ul, ol ):where([class])
 	padding-left: 0
@@ -41,6 +43,12 @@ button
 	max-width: 1920px
 	padding: 0 14rem
 
+.hider
+	background: $fon
+	position: relative
+	z-index: 5
+	height: 16px
+
 .promo
 	margin-bottom: 66px
 	padding: 140px 0 161px 0
@@ -58,7 +66,7 @@ button
 				span
 					color: $accent
 		
-	&__blub
+	&__blog
 		max-width: 531px
 		&_title
 			text-align: center
@@ -72,7 +80,7 @@ button
 			overflow: hidden
 			padding: 24px 16px 24px 24px
 
-	&__blub_scroll
+	&__blog_scroll
 		height: 100%
 		overflow-y: scroll
 		background: none
@@ -87,13 +95,17 @@ button
 			background-color: $accent
 			border-radius: 4px
 
-	&__blub_item
+	&__blog_item
+		margin-right: 16px
 		display: flex
 		flex-direction: column
 		gap: 14px
 		padding: 16px 64px
 		border-radius: 196px
 		overflow: hidden
+		transition: .3s ease
+		&:hover
+			background: $accent
 		&-text
 			font-size: 24px
 			line-height: 28px
@@ -105,7 +117,7 @@ button
 .chips
 	position: absolute
 	justify-self: center
-	top: 16px
+	top: 0
 	left: 44%
 	overflow: hidden
 	height: 100%
