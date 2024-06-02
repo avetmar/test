@@ -9,7 +9,7 @@ body
 	color: $text
 	font-size: 1.6rem
 	background-color: $fon
-	line-height: 20px
+	line-height: 2rem
 	position: relative
 *a
 	text-decoration: none
@@ -40,8 +40,8 @@ button
 
 .container
 	margin: 0 auto
-	max-width: 1920px
-	padding: 0 14rem
+	max-width: 1640px
+	padding: 0 4rem
 
 .hider
 	background: $fon
@@ -50,16 +50,17 @@ button
 	height: 16px
 
 .promo
-	margin-bottom: 66px
-	padding: 140px 0 161px 0
+	margin-bottom: 6.2rem
+	padding: 14rem 0 16rem 0
 	&__wrapper
 		display: flex
 		justify-content: space-between
 		align-items: center
+		gap: 15px
 
 
 	&__content
-		max-width: 669px
+		max-width: 67rem
 		&_title
 			span
 				text-transform: uppercase
@@ -67,16 +68,16 @@ button
 					color: $accent
 		
 	&__blog
-		max-width: 531px
+		max-width: 53rem
 		&_title
 			text-align: center
-			margin-bottom: 24px
+			margin-bottom: 2.4rem
 		&_wrapper
-			background: none
+			background: rgba(225, 225, 225, 12%)
 			width: 100%
-			height: 595px
+			height: 59.5rem
 			border: 3px solid $accent
-			border-radius: 100px
+			border-radius: 10rem
 			overflow: hidden
 			padding: 24px 16px 24px 24px
 
@@ -84,12 +85,12 @@ button
 		height: 100%
 		overflow-y: scroll
 		background: none
-		border-radius: 76px
+		border-radius: 7.6rem
 		&::-webkit-scrollbar
 			width: 8px
 		&::-webkit-scrollbar-track
 			background: rgba(255, 255, 255, 12%)
-			margin: 96px 0
+			margin: 9.6rem 0
 			border-radius: 4px
 		&::-webkit-scrollbar-thumb
 			background-color: $accent
@@ -97,22 +98,23 @@ button
 
 	&__blog_item
 		margin-right: 16px
+		margin-bottom: 16px
 		display: flex
 		flex-direction: column
 		gap: 14px
-		padding: 16px 64px
-		border-radius: 196px
+		padding: 1.6rem 6.4rem
+		border-radius: 19.6rem
 		overflow: hidden
 		transition: .3s ease
 		&:hover
 			background: $accent
 		&-text
-			font-size: 24px
-			line-height: 28px
+			font-size: 2.4rem
+			line-height: 2.8rem
 		&-data
 			font-family: FuturaPT
-			font-size: 14px
-			line-height: 16px
+			font-size: 1.4rem
+			line-height: 1.6rem
 
 .chips
 	position: absolute
@@ -121,10 +123,10 @@ button
 	left: 44%
 	overflow: hidden
 	height: 100%
-	display: flex
-	gap: 17px
+	display: none
+	gap: 1.7rem
 	&__wrapper
 		display: flex
-		width: 100px
+		width: 10rem
 		flex-direction: column
-		gap: 15px
+		gap: 1.5rem

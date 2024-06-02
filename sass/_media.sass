@@ -1,0 +1,107 @@
+@media (prefers-reduced-motion: reduce)
+	*
+		animation-duration: 0.01ms !important
+		animation-iteration-count: 1 !important
+		transition-duration: 0.01ms !important
+		scroll-behavior: auto !important
+
+@media (max-width: 1440px)
+	html
+		font-size: 57%
+
+@media (max-width: 1300px)
+	html
+		font-size: 52%
+
+@media (max-width: 1200px)
+	html
+		font-size: 47%
+
+	.header__wrapper
+		grid-template-columns: max-content 1fr
+		.nav
+			grid-column: 1 / 2
+		.btn__wrapper
+			grid-column: 2 / 3
+
+@media (max-width: 1024px)
+	html
+		font-size: 42%
+	h1
+		font-size: 8rem
+	
+	.chips
+		left: 34%
+
+@media (max-width: 768px)
+	.container
+		padding: 0 10px
+
+	.header__wrapper
+		display: none
+	
+	.header__wrapper_mobile
+		display: flex
+
+
+	.promo
+		margin-bottom: 75px
+		padding: 70px 0 70px 0
+		&__blog
+			max-width: 700px
+			&_wrapper				
+				border-radius: 50px
+				padding: 10px
+			&_scroll
+				border-radius: 40px
+			&_item
+				border-radius: 40px
+				padding: 15px 35px
+				margin-right: 6px
+		&__wrapper
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			gap: 230px
+		&__content
+			max-width: inherit
+			text-align: center
+
+	.btn__main
+		display: block
+
+	.chips
+		transform: rotate(90deg)
+		height: 160px
+		top: -170px
+		left: 0
+		height: 100%
+		&__wrapper
+			gap: 10px
+			width: 50px
+
+	.footer
+		// display: none
+		border-radius:50px 50px 0 0
+		padding: 20px 10px
+		&__wrapper
+			display: flex
+			flex-direction: column
+			align-items: start
+			gap: 20px
+		&__links
+			display: flex
+			flex-direction: column
+			gap: 2px
+		&__social_title
+			margin-bottom: 8px
+			text-align: left
+		&__social_icons
+			display: flex
+			gap: 8px
+			.footer__icon
+				width: 27px
+	
+
+		
