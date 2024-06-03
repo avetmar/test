@@ -65,8 +65,10 @@
 
 @media (max-width: 1024px)
 	.header__wrapper
-		.nav, .btn__wrapper
-			display: none
+		display: none
+	
+	.header__wrapper_mobile
+		display: block
 
 	.promo__blog
 		max-width: 480px
@@ -126,18 +128,20 @@
 		line-height: 26px
 		margin-bottom: 24px
 
+
 	.promo
 		padding: 70px 0 145px 0
 		.animation
 			padding-left: 0
-			height: 600px
-			// transform: translateX(-10px)
+			height: 770px
 			.rotate
 				transform: rotate(90deg)
-				width: 600px
+				width: 770px
+				height: 100%
 				overflow: hidden
 				.chips
-					height: 300px
+					height: 100%
+					width: 510px
 					justify-content: flex-end
 				
 
