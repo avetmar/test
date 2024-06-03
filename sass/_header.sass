@@ -3,12 +3,12 @@
 	z-index: 5
 	background: $fon
 	display: grid
-	padding: 2.4rem 4.8rem
+	padding: 24px 48px
 	grid-template-columns: 1fr max-content 1fr
 	grid-template-rows: max-content
 	width: 100%
 	border: 4px solid #F97247
-	border-radius: 6.4rem
+	border-radius: 64px
 	
 	.nav
 		grid-column: 2 / 3
@@ -29,17 +29,18 @@
 
 .header__wrapper_mobile
 	position: relative
-	display: flex
+	display: none
 	border: 2px solid $accent
 	border-radius: 64px
 	padding: 10px 14px
 	justify-content: flex-end
 	.nav
 		position: absolute
-		top: -110vh
+		top: 10vh
 		left: 0
 		background: $fon
-		width: 100vw
+		width: 100%
+		z-index: 15
 		.nav__menu_item
 			display: block
 			margin-bottom: 5px

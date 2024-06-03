@@ -1,5 +1,4 @@
 html
-	font-size: 62.5%
 	scroll-behavior: smooth !important
 	
   
@@ -7,9 +6,9 @@ body
 	font-family: "Lexend", sans-serif
 	font-weight: 400
 	color: $text
-	font-size: 1.6rem
+	font-size: 16px
 	background-color: $fon
-	line-height: 2rem
+	line-height: 20px
 	position: relative
 *a
 	text-decoration: none
@@ -41,18 +40,15 @@ button
 .container
 	margin: 0 auto
 	max-width: 1640px
-	padding: 0 4rem
-
-.hider
-	background: $fon
-	position: relative
-	z-index: 5
-	height: 16px
+	padding: 16px 40px 0 40px
 
 .promo
-	margin-bottom: 6.2rem
-	padding: 14rem 0 16rem 0
+	position: relative
+	padding: 140px 0 220px 0
+	background: $fon
 	&__wrapper
+		position: relative
+		z-index: 3
 		display: flex
 		justify-content: space-between
 		align-items: center
@@ -60,7 +56,7 @@ button
 
 
 	&__content
-		max-width: 67rem
+		max-width: 670px
 		&_title
 			span
 				text-transform: uppercase
@@ -68,16 +64,16 @@ button
 					color: $accent
 		
 	&__blog
-		max-width: 53rem
+		max-width: 530px
 		&_title
 			text-align: center
-			margin-bottom: 2.4rem
+			margin-bottom: 24px
 		&_wrapper
 			background: rgba(225, 225, 225, 12%)
 			width: 100%
-			height: 59.5rem
+			height: 595px
 			border: 3px solid $accent
-			border-radius: 10rem
+			border-radius: 100px
 			overflow: hidden
 			padding: 24px 16px 24px 24px
 
@@ -85,12 +81,12 @@ button
 		height: 100%
 		overflow-y: scroll
 		background: none
-		border-radius: 7.6rem
+		border-radius: 76px
 		&::-webkit-scrollbar
 			width: 8px
 		&::-webkit-scrollbar-track
 			background: rgba(255, 255, 255, 12%)
-			margin: 9.6rem 0
+			margin: 96px 0
 			border-radius: 4px
 		&::-webkit-scrollbar-thumb
 			background-color: $accent
@@ -102,31 +98,38 @@ button
 		display: flex
 		flex-direction: column
 		gap: 14px
-		padding: 1.6rem 6.4rem
-		border-radius: 19.6rem
+		padding: 16px 64px
+		border-radius: 196px
+		background: #311212
 		overflow: hidden
 		transition: .3s ease
 		&:hover
 			background: $accent
 		&-text
-			font-size: 2.4rem
-			line-height: 2.8rem
+			font-size: 24px
+			line-height: 28px
 		&-data
 			font-family: FuturaPT
-			font-size: 1.4rem
-			line-height: 1.6rem
-
-.chips
-	position: absolute
-	justify-self: center
-	top: 0
-	left: 44%
-	overflow: hidden
-	height: 100%
-	display: none
-	gap: 1.7rem
-	&__wrapper
-		display: flex
-		width: 10rem
-		flex-direction: column
-		gap: 1.5rem
+			font-size: 14px
+			line-height: 16px
+	.animation
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		z-index: 1	
+		overflow: hidden
+		.rotate
+			display: block
+			height: 100%
+			width: 100%
+			.chips
+				display: flex
+				justify-content: center
+				gap: 17px
+				&__wrapper
+					display: flex
+					width: 100px
+					flex-direction: column
+					gap: 15px

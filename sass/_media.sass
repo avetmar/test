@@ -5,103 +5,183 @@
 		transition-duration: 0.01ms !important
 		scroll-behavior: auto !important
 
-@media (max-width: 1440px)
-	html
-		font-size: 57%
-
-@media (max-width: 1300px)
-	html
-		font-size: 52%
-
-@media (max-width: 1200px)
-	html
-		font-size: 47%
-
+@media (max-width: 1370px)
+	.container
+		padding: 13px 20px 0 20px
 	.header__wrapper
-		grid-template-columns: max-content 1fr
+		grid-template-columns: 1fr max-content
 		.nav
 			grid-column: 1 / 2
 		.btn__wrapper
 			grid-column: 2 / 3
 
-@media (max-width: 1024px)
-	html
-		font-size: 42%
+@media (max-width: 1200px)
 	h1
-		font-size: 8rem
+		font-size: 70px
+		line-height: 70px
+		margin-bottom: 18px
+
+	h2
+		font-size: 36px
+		line-height: 40px
+
+	h3
+		font-size: 26px
+		line-height: 29px
+		margin-bottom: 36px
+
+	.header__wrapper
+		.nav__menu
+			gap: 24px
+
+	.promo__content
+		max-width: 570px
+
+	.promo__blog
+		max-width: 480px
+		&_title
+			margin-bottom: 21px
+		&_wrapper
+			height: 500px
+			border-radius: 75px
+			padding: 17px 11px 17px 17px
+
+	.promo__blog_scroll
+		border-radius: 58px
+		&::-webkit-scrollbar
+			width: 6px
+		&::-webkit-scrollbar-track
+			margin: 78px 0
+
+	.promo__blog_item
+		margin-right: 11px
+		margin-bottom: 13px
+		gap: 10px
+		padding: 15px 50px
+		border-radius: 58px		
+		&-text
+			font-size: 20px
+			line-height: 24px
+
+@media (max-width: 1024px)
+	.header__wrapper
+		.nav, .btn__wrapper
+			display: none
+
+	.promo__blog
+		max-width: 480px
+		&_title
+			margin-bottom: 18px
+		&_wrapper
+			height: 420px
+			border-radius: 50px
+			padding: 10px 16px 10px 10px
+
+	.promo__blog_scroll
+		border-radius: 40px
+		&::-webkit-scrollbar
+			width: 4px
+		&::-webkit-scrollbar-track
+			margin: 60px 0
+
+	.promo__blog_item
+		margin-right: 6px
+		margin-bottom: 10px
+		gap: 6px
+		padding: 15px 35px
+		border-radius: 40px
+		&-text
+			font-size: 16px
+			line-height: 20px
 	
-	.chips
-		left: 34%
+	.promo
+		.animation
+			.rotate
+				.chips
+					gap: 8px
+					&__wrapper
+						width: 50px
+						gap: 12px
+
+@media (max-width: 870px)
+	.promo__blog
+		max-width: 300px
 
 @media (max-width: 768px)
 	.container
-		padding: 0 10px
+		padding: 10px 10px 0 10px
+	h1
+		font-size: 46px
+		line-height: 50px
+		margin-bottom: 12px
+		max-width: 300px
+		margin: 0 auto
 
-	.header__wrapper
-		display: none
-	
-	.header__wrapper_mobile
-		display: flex
+	h2
+		font-size: 32px
+		line-height: 40px
 
+	h3
+		font-size: 20px
+		line-height: 26px
+		margin-bottom: 24px
 
 	.promo
-		margin-bottom: 75px
-		padding: 70px 0 70px 0
-		&__blog
-			max-width: 700px
-			&_wrapper				
-				border-radius: 50px
-				padding: 10px
-			&_scroll
-				border-radius: 40px
-			&_item
-				border-radius: 40px
-				padding: 15px 35px
-				margin-right: 6px
-		&__wrapper
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			gap: 230px
-		&__content
-			max-width: inherit
-			text-align: center
+		padding: 70px 0 145px 0
+		.animation
+			padding-left: 0
+			height: 600px
+			// transform: translateX(-10px)
+			.rotate
+				transform: rotate(90deg)
+				width: 600px
+				overflow: hidden
+				.chips
+					height: 300px
+					justify-content: flex-end
+				
+
+
+
+	.promo__wrapper
+		flex-direction: column
+		align-items: center
+		gap: 230px
+	
+	.promo__blog
+		max-width: 570px
+	
+	.promo__content
+		width: 100%
+		text-align: center
 
 	.btn__main
 		display: block
-
-	.chips
-		transform: rotate(90deg)
-		height: 160px
-		top: -170px
-		left: 0
-		height: 100%
-		&__wrapper
-			gap: 10px
-			width: 50px
+		padding: 15px 30px
+		font-size: 18px
+		line-height: auto
 
 	.footer
-		// display: none
-		border-radius:50px 50px 0 0
+		border-radius: 50px 50px 0 0
 		padding: 20px 10px
 		&__wrapper
-			display: flex
 			flex-direction: column
-			align-items: start
 			gap: 20px
+			align-items: flex-start
 		&__links
-			display: flex
 			flex-direction: column
 			gap: 2px
+			&_item
+				font-size: 14px
+				.hide
+					display: block
 		&__social_title
-			margin-bottom: 8px
 			text-align: left
-		&__social_icons
-			display: flex
-			gap: 8px
-			.footer__icon
-				width: 27px
-	
+			font-size: 14px
+			margin-bottom: 8px
 
-		
+		&__icon
+			width: 27px
+			height: 27px
+		.hide
+			display: block
