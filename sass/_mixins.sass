@@ -83,7 +83,7 @@ h3
 	
 		
 
-.btn__lang
+.btn__lang, .btn__lang_mob
 	position: relative
 	display: flex
 	align-items: center
@@ -118,7 +118,7 @@ h3
 		img.unionBlack
 			opacity: 1
 
-.btn__lang_back
+.btn__lang_back, .btn__lang_back-mob
 	overflow: hidden
 	position: absolute
 	left: 0
@@ -133,16 +133,15 @@ h3
 	flex-direction: column
 	align-items: center
 	transition: .3s ease
+	.btn__lang_item
+		transition: .3s ease
+		&:hover
+			color: $btn_hover
 
 .hidden
 	height: 0
 	padding-top: 0
 	border: 2px solid $fon
-.btn__lang_back
-	.btn__lang_item
-		transition: .3s ease
-		&:hover
-			color: $btn_hover
 
 .hide
 	display: none
